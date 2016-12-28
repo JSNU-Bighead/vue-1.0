@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>city</title>
+	<link rel="stylesheet" href="city.css">
+</head>
+<body id="vue">
+	<city v-bind:city-obj.sync="item.City" v-bind:city-url="item.CityUrl"></city>
+	
+</body>
+<script src="//cdn.bootcss.com/vue/1.0.27/vue.js"></script>
+<script src="//cdn.bootcss.com/jquery/1.12.2/jquery.js"></script>
+<script src="firstLetter.js"></script>
+<script src="city.js"></script>
+<script>
+	var vm = new Vue({
+		el: '#vue',
+		data:{
+			item: {
+				City:{},
+				CityUrl:'city.json'
+			}
+		}
+	})
+</script>
+
+</html>

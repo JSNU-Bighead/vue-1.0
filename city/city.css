@@ -1,0 +1,170 @@
+#city-val {
+    width: 100%;
+    padding: 4px 7px;
+    display: block;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 12px;
+    color: inherit;
+    line-height: normal;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color ease-in-out .15s;
+}
+
+.none {
+    display: none;
+}
+
+.city-wrapper {
+    position: relative;
+}
+
+    .city-panel:after,
+    .city-panel-seach:after {
+        position: absolute;
+        display: block;
+        height: 0;
+        width: 0;
+        font-size: 0;
+        line-height: 0;
+        border-color: transparent transparent #fff;
+        border-style: dashed dashed solid;
+        border-width: 8px;
+        z-index: 9999;
+        background: 0;
+        top: -16px;
+        left: 15px;
+        content: '';
+    }
+
+.city-panel,
+.city-panel-seach{
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    font-size: 12px;
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+}
+.city-explain{
+    padding: 5px 20px;
+    color: #999;
+}
+.city-panel .city-explain{
+    padding: 0;
+}
+/*正常模块*/
+.city-panel {
+    width: 410px;
+    padding: 15px 10px;
+}
+.city-tab-nav {
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.city-tab-item {
+    list-style: none;
+    display: inline-block;
+    padding-bottom: 1px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+    .city-tab-item.current {
+        border-bottom: 1px solid #50b400;
+        color: #50b400;
+        font-weight: bold;
+        margin-bottom: -1px;
+    }
+.city-list-container {
+    margin-top: 5px;
+    text-align: center;
+}
+.city-tab-content .city-first-code {
+    display: inline-block;
+    width: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #f60;
+    padding: 1px 0;
+    line-height: 22px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.city-tab-content .city-list {
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+}
+
+    .city-tab-content .city-list .city-name {
+        float: left;
+        cursor: pointer;
+        display: block;
+        border: 1px solid #FFF;
+        height: 22px;
+        line-height: 22px;
+        margin-right: 2px;
+        margin-left: 0;
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-top: 0;
+        color: #333;
+        width: 4.8em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align:left;
+    }
+
+        .city-tab-content .city-list .city-name:hover {
+            color: #ff7800;
+        }
+        /*搜索模块*/
+.city-panel-seach ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.city-panel-seach ul li{
+    padding: 5px 15px;
+    color: #666;
+    text-align: center;
+    min-width: 175px;
+    white-space: nowrap;
+}
+.city-panel-seach ul li:first-child{
+    border-top: 1px dashed #DDD;
+}
+    
+.city-panel-seach ul li:hover{
+    background: #1ab394;
+    color: #fff;
+    cursor: pointer;
+}
+.city-panel-seach ul li .city-search-name{
+    display: inline-block;
+}
+.city-panel-seach ul li .city-search-name.hasCity,
+.city-panel-seach ul li .city-search-sub.hasCity {
+    width: 4.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.city-panel-seach ul li .city-search-sub{
+    display: inline-block;
+    margin-left: 30px; 
+}
