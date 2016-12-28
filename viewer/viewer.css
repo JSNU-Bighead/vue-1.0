@@ -181,4 +181,8 @@ body{
 	font-size: 20px;
 	font-weight: 700;
 }
+.viewer-modal-wrapper .viewer-modal .cant-wrapper a{
+	color: #f60;
+	text-decoration:none;
+}
 /*----- modal end ------*/

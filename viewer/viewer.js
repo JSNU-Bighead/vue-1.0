@@ -96,7 +96,7 @@ Vue.component('viewer', {
 		            '<iframe v-if="item.isPDF" v-bind:src="item.filePath"></iframe>'+
 		            '<div v-if="!item.isImage && !item.isPDF" class="cant-wrapper">'+
 		                '<div class="cant-icon"></div>'+
-		                '<p class="cant-text">抱歉，此文件暂不能预览。</p>'+
+		                '<p class="cant-text">抱歉，此文件暂不能预览。<a v-bind:href="item.filePath" >下载...</a></p>'+
 		            '</div>'+
 		        '</div>'+
 		    '</div>'+
