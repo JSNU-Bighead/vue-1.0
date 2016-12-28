@@ -1,0 +1,26 @@
+[
+    {
+        "fileName": "a.gif",
+        "filePath": "./src/a.gif"
+    },
+    {
+        "fileName": "b.pdf",
+        "filePath": "./src/b.pdf"
+    },
+    {
+        "fileName": "c.docx",
+        "filePath": "./src/c.docx"
+    },
+    {
+        "fileName": "d.pdf",
+        "filePath": "./src/d.pdf"
+    },
+    {
+        "fileName": "e.JPG",
+        "filePath": "./src/e.JPG"
+    },
+    {
+        "fileName": "f.doc",
+        "filePath": "./src/f.doc"
+    }
+]

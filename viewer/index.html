@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文件查看组件</title>
+    <link href="viewer.css" rel="stylesheet" />
+</head>
+<body id="vue">
+	<viewer v-bind:viewer-data="viewerData">
+    </viewer>
+	<script src="//cdn.bootcss.com/vue/1.0.27/vue.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.12.2/jquery.js"></script>
+    <script type="text/javascript" src="viewer.js"></script>
+    <script type="text/javascript">
+    	var vm = new Vue({
+            el: '#vue',
+            data: {
+                viewerData: {
+                    url: './index.json',
+                    flag: 'abc'//用来区分不同的viewer实体
+                }
+            }
+        })
+    </script>
+</body>
+</html>
