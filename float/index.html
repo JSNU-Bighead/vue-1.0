@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>float</title>
+        <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <style type="text/css">
+        	/*----- reset start ------*/
+        	html,body{
+			    height: 100%;
+        	}
+			html, body, div, span,p{
+			    margin: 0;
+			    padding: 0;
+			}
+			
+			a {
+			    text-decoration: none;
+			    color: inherit;
+			}
+			
+			body {
+			    font-size: 12px;
+			    font-family: tahoma, "Microsoft YaHei", "Hiragino Sans GB", Arial, sans-serif;
+			    line-height: 1.42857143;
+			    color: #333;
+			}
+			/*----- reset end ------*/
+        	.float-wrap{
+        		position: fixed;
+        		top:0;
+        		left:0;
+    			width: 242px;
+    			height: 166px;
+    			background: url(float.png);
+    			padding: 45px 30px 15px 20px;
+    			box-sizing: border-box;
+        	}
+        	.float-content {
+        		height: 100%;
+    			text-align: center;
+    			padding-top: 25px;
+    			position: relative;
+        	}
+        	.float-content em {
+        		position: absolute;
+        		top: 0;
+        		right: -15px;
+        		color: #666;
+        		cursor: pointer;
+        	}
+        	.float-content p {
+        		margin-bottom: 15px;
+   				font-weight: 700;
+        	}
+        	.btn {
+        		display: inline-block;
+    			font-size: 12px;
+    			font-weight: 600;
+    			line-height: normal;
+    			text-align: center;
+    			cursor: pointer;
+    			border-radius: 3px;
+    			outline: none;
+    			box-sizing: border-box;
+    			vertical-align: top;
+        		padding: 0 8px;
+    			height: 28px;
+    			line-height: 26px;
+    			background-color: #1ab394;
+    			border: 1px solid #1ab394;
+    			color: #fff;
+        	}
+        	a.btn{
+        		margin-left: 5px;
+        	}
+        </style>
+    </head>
+    <body id="vue">
+		<float>
+			<div slot="body">JSNU-Bighead</div>
+		</float>
+    </body>
+    <script src="http://cdn.bootcss.com/vue/1.0.11/vue.js"></script>
+    <script src="float.js"></script>
+    <script>
+        var vm = new Vue({
+			el: '#vue',
+			data:{
+						
+			}
+		})
+    </script>
+</html>
