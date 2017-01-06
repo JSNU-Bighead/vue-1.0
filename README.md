@@ -6,3 +6,5 @@ Vue 组件
 基于Vue.js开发的文件查看组件
 ## float
 基于Vue.js开发的浮动广告组件
+## guide
+基于Vue.js开发的引导页组件
